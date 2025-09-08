@@ -32,22 +32,25 @@ jobs:
       - name: Build
         run: npm run build
 
-      # SPA fallback para React Router (opcional pero recomendado)
-      - name: SPA fallback
-        run: cp dist/index.html dist/404.html
+      - name: Prepare Pages artifact
+        run: |
+          touch dist/.nojekyll
+          cp dist/index.html dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          path: dist
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
