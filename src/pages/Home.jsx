@@ -84,7 +84,7 @@ export default function Home() {
         <meta property="og:url" content="https://tu-dominio.com/" />
         <meta property="og:image" content="https://tu-dominio.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sergio Morales — Cybersecurity" />
+        <meta name="twitter:title" content="Sergio Morales" />
         <meta name="twitter:description" content="Pentesting · Forensics · Automation." />
         <meta name="twitter:image" content="https://tu-dominio.com/og-image.jpg" />
         <script type="application/ld+json">
