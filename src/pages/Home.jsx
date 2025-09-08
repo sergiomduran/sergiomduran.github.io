@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Sergio Morales — Cybersecurity</title>
+        <title>Sergio Morales</title>
         <meta name="description" content="Pentesting · Forensics · Automation — Portfolio y notas de Sergio Morales." />
         <link rel="canonical" href="https://tu-dominio.com/" />
         <meta property="og:type" content="website" />
