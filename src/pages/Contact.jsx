@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import { MdEmail } from 'react-icons/md';
+import { FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa';
 import ContactItem from '../components/ContactItem.jsx';
 
 export default function Contact() {
@@ -27,28 +28,28 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ContactItem
             href="mailto:smoralesduran4@gmail.com"
-            icon="✉️"
+            icon={<MdEmail className="w-6 h-6 text-red-600" />}
             title="Email"
             subtitle="smoralesduran4@gmail.com"
           />
 
           <ContactItem
             href="https://www.linkedin.com/in/sergio-morales-durán"
-            icon="🔗"
+            icon={<FaLinkedin className="w-6 h-6 text-blue-600" />}
             title="LinkedIn"
             subtitle="/in/sergio-morales-durán"
           />
 
           <ContactItem
-            href="https://github.com/red4ly3n"
-            icon="💻"
+            href="https://github.com/sergiomduran"
+            icon={<FaGithub className="w-6 h-6 text-gray-800 dark:text-gray-200" />}
             title="GitHub"
-            subtitle="@red4ly3n"
+            subtitle="@sergiomduran"
           />
 
           <ContactItem
             href="https://discord.gg/tu-invite"
-            icon="🎧"
+            icon={<FaDiscord className="w-6 h-6 text-indigo-600" />}
             title="Discord"
             subtitle="Join Server"
           />
