@@ -100,74 +100,77 @@ export default function Home() {
       </Helmet>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-10 pb-12">
-        {/* HERO animado */}
-        <motion.header
-          initial="hidden"
-          animate="show"
-          variants={stagger}
-          className="mb-16 flex flex-col-reverse lg:flex-row items-center gap-10"
-        >
-          {/* Texto */}
-          <div className="flex-1 text-center lg:text-left">
-            <motion.p variants={fadeUp(0)} className="text-sm tracking-wide text-gray-500 dark:text-gray-400 mb-2">
-              Cybersecurity Engineering Student
-            </motion.p>
+ {/* HERO animado */}
+<motion.header
+  initial="hidden"
+  animate="show"
+  variants={stagger}
+  className="mb-16 flex flex-col-reverse lg:flex-row items-center gap-10"
+>
+  {/* Texto */}
+  <div className="flex-1 text-center lg:text-left">
+    <motion.p variants={fadeUp(0)} className="text-sm tracking-wide text-gray-500 dark:text-gray-400 mb-2">
+      Cybersecurity Engineering Student
+    </motion.p>
 
-            <motion.h1
-              variants={fadeUp(0.05)}
-              className="text-[2.5rem] md:text-[3.25rem] font-light tracking-tight leading-[1.1]"
-              aria-label="Hello, Sergio here. Cybersecurity Engineering Student"
-            >
-              Hello, <span className="font-medium">Sergio</span> here
-            </motion.h1>
+    <motion.h1
+      variants={fadeUp(0.05)}
+      className="text-[2.5rem] md:text-[3.25rem] font-light tracking-tight leading-[1.1]"
+      aria-label="Hello, Sergio here. Cybersecurity Engineering Student"
+    >
+      Hello, <span className="font-medium">Sergio</span> here
+    </motion.h1>
 
-            <motion.p variants={fadeUp(0.1)} className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-xl">
-              Pentesting · Forensics · Automation. Sharing projects, writeups and practical notes focused on methodology and real-world risk reduction.
-            </motion.p>
+    <motion.p variants={fadeUp(0.1)} className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-xl">
+      Pentesting · Forensics · Automation. Sharing projects, writeups and practical notes focused on methodology and real-world risk reduction.
+    </motion.p>
 
-            <motion.div variants={fadeUp(0.15)} className="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <Link
-                to="/blog"
-                className="px-5 py-2 rounded-full text-sm font-medium bg-gray-900 text-white
-                           dark:bg-white dark:text-black transition hover:opacity-90"
-              >
-                Read Blog
-              </Link>
-              <Link
-                to="/contact"
-                className="px-5 py-2 rounded-full text-sm border border-gray-200 dark:border-gray-700
-                           hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-              >
-                Contact
-              </Link>
-            </motion.div>
-            <motion.p
-              variants={fadeUp(0.2)}
-              className="mt-3 text-sm text-gray-500 dark:text-gray-400 text-center lg:text-left"
-            >
-              <Link to="/blog/CVPage" className="underline decoration-gray-300 dark:decoration-gray-700 underline-offset-4 hover:decoration-gray-500">
-                View CV →
-              </Link>
-            </motion.p>
-          </div>
+    <motion.div variants={fadeUp(0.15)} className="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+      <Link
+        to="/blog"
+        className="px-5 py-2 rounded-full text-sm font-medium bg-gray-900 text-white
+                   dark:bg-white dark:text-black transition hover:opacity-90"
+      >
+        Read Blog
+      </Link>
+      <Link
+        to="/contact"
+        className="px-5 py-2 rounded-full text-sm border border-gray-200 dark:border-gray-700
+                   hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+      >
+        Contact
+      </Link>
+    </motion.div>
 
-          {/* Foto con tilt sutil */}
-          <motion.div
-            variants={fadeUp(0.1)}
-            className="flex-1 flex justify-center"
-            whileHover={!reduce ? { rotateZ: -1.5, scale: 1.02 } : {}}
-            transition={{ type: "spring", stiffness: 200, damping: 15 }}
-          >
-            <img
-              src="/images/IMG_20241026_151139_671_20241026_172205_00002.jpg"
-              alt="Sergio Morales"
-              className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full border-4 border-gray-200 dark:border-gray-700 shadow-lg"
-              loading="lazy"
-              decoding="async"
-              sizes="(min-width:1024px) 13rem, 10rem"
-            />
-          </motion.div>
-        </motion.header>
+    <motion.p
+      variants={fadeUp(0.2)}
+      className="mt-3 text-sm text-gray-500 dark:text-gray-400 text-center lg:text-left"
+    >
+      <Link to="/blog/CVPage" className="underline decoration-gray-300 dark:decoration-gray-700 underline-offset-4 hover:decoration-gray-500">
+        View CV →
+      </Link>
+    </motion.p>
+  </div>
+
+  {/* Foto estática, sin animaciones */}
+<div className="flex-1 flex justify-center">
+  <img
+    src="/images/IMG_20241026_151139_671_20241026_172205_00002.jpg"
+    alt="Sergio Morales"
+    className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full border-4 border-gray-200 dark:border-gray-700 shadow-lg"
+    width={208}  // 52 * 4px (tailwind) para reserva de espacio aprox
+    height={208}
+    loading="lazy"
+    decoding="async"
+    sizes="(min-width:1024px) 13rem, 10rem"
+    onError={(e) => {
+      console.warn("No se cargó la imagen en /public/images. Revisa nombre/ruta.");
+    }}
+  />
+</div>
+</motion.header>
+
+
 
         {/* GRID principal */}
         <div className="grid grid-cols-1 lg:grid-cols-[220px,1fr] gap-8">
