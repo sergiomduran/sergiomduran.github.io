@@ -6,6 +6,7 @@ import Blog from './pages/Blog.jsx';
 import Writeups from './pages/Writeups.jsx';
 import Contact from './pages/Contact.jsx';
 import DopamineDetox from './pages/blog/DopamineDetox.jsx';
+import CVPage from './pages/blog/CVPage.jsx'; // 👈 añadido
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/writeups" element={<Writeups />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog/dopamine-detox" element={<DopamineDetox />} />
+        <Route path="/blog/CVPage" element={<CVPage />} /> {/* 👈 tu CV */}
         <Route path="*" element={<Home />} />
       </Route>
     </Routes>

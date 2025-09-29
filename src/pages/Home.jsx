@@ -11,8 +11,8 @@ const toc = [
 ];
 
 const projects = [
-  { title: "Forensic Lab", desc: "Malware analysis & forensic investigation environment.", to: "#", cover: "/images/4ly3nzz-spyro2.png" },
-  { title: "HTB Automation Tool", desc: "Automates VPN connection & Nmap profiles for HTB.", to: "#", cover: "/images/4ly3nzz-spyro2.png" },
+  { title: "Forensic Lab", desc: "Malware analysis & forensic investigation environment.", to: "https://github.com/sergiomduran/TFC-Laboratorio-Forense", cover: "/images/4ly3nzz-spyro2.png" },
+  { title: "HTB Automation Tool", desc: "Automates VPN connection & Nmap profiles for HTB.", to: "https://github.com/sergiomduran/htbscan", cover: "/images/4ly3nzz-spyro2.png" },
   { title: "HTB Writeups (80+)", desc: "Methodology & notes for Hack The Box machines.", to: "/writeups", cover: "/images/4ly3nzz-spyro2.png" },
 ];
 
@@ -141,6 +141,14 @@ export default function Home() {
                 Contact
               </Link>
             </motion.div>
+            <motion.p
+              variants={fadeUp(0.2)}
+              className="mt-3 text-sm text-gray-500 dark:text-gray-400 text-center lg:text-left"
+            >
+              <Link to="/blog/CVPage" className="underline decoration-gray-300 dark:decoration-gray-700 underline-offset-4 hover:decoration-gray-500">
+                View CV →
+              </Link>
+            </motion.p>
           </div>
 
           {/* Foto con tilt sutil */}

@@ -55,6 +55,16 @@ const INITIAL_POSTS = [
     excerpt: 'Devices I use, hardware, PC... .',
     cover: '',
     url: '/blog/setup'
+  },
+  {
+    title: 'My CV',
+    slug: 'cv',
+    date: '2025-09-01',
+    readMins: 3,
+    tags: ['CV'],
+    excerpt: 'Take a look at my CV.',
+    cover: '',
+    url: '/blog/CVPage'
   }
 ];
 
