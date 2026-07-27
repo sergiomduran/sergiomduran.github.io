@@ -27,10 +27,10 @@ export default function Contact() {
       <main className="max-w-4xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ContactItem
-            href="mailto:smoralesduran4@gmail.com"
+            href="mailto:smoralesduran9@gmail.com"
             icon={<MdEmail className="w-6 h-6 text-red-600" />}
             title="Email"
-            subtitle="smoralesduran4@gmail.com"
+            subtitle="smoralesduran9@gmail.com"
           />
 
           <ContactItem
