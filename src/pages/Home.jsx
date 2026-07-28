@@ -13,7 +13,6 @@ const toc = [
 const projects = [
   { title: "Forensic Lab", desc: "Malware analysis & forensic investigation environment.", to: "https://github.com/sergiomduran/TFC-Laboratorio-Forense", cover: "/images/4ly3nzz-spyro2.png" },
   { title: "HTB Automation Tool", desc: "Automates VPN connection & Nmap profiles for HTB.", to: "https://github.com/sergiomduran/htbscan", cover: "/images/4ly3nzz-spyro2.png" },
-  { title: "HTB Writeups (80+)", desc: "Methodology & notes for Hack The Box machines.", to: "/writeups", cover: "/images/4ly3nzz-spyro2.png" },
 ];
 
 const skills = ["Bash","Python","Go","JavaScript","Web Pentesting","Network Pentesting","Exploit Dev","Docker","Kubernetes","SQL","NoSQL","Splunk","Wazuh","Fortinet","Linux","Nmap","Burp","ZAP"];
