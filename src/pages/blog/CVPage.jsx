@@ -8,7 +8,7 @@ const cvData = {
   email: "smoralesduran4@gmail.com",
   linkedin: "https://www.linkedin.com/in/sergio-morales-durán",
   pdfUrl: "/cv/Sergio-Morales-Duran-CV.pdf",
-  summary: `Cybersecurity enthusiast with professional training in penetration testing. Hands-on experience in lab environments and CTFs, developing strong skills in reconnaissance, manual exploitation, and automation. Proficient with tools such as Nmap, Burp Suite, Metasploit, and Linux systems. Passionate about problem-solving and continuous learning.`,
+  summary: `Cybersecurity professional with hands-on experience across security operations, system administration, vulnerability assessment, and offensive security. Experienced in monitoring and investigating security events, working with SIEM platforms, administering Linux and virtualized environments, and assessing vulnerabilities across web applications and networks. Strong practical background developed through professional experience, cybersecurity certifications, CTFs, and extensive security labs. Skilled in security monitoring, incident investigation, penetration testing, automation, and scripting with Python and Bash. Currently pursuing a BSc in Cybersecurity Engineering, with a strong focus on continuously developing practical skills and delivering effective security solutions.`,
   sections: {
     experience: [
       { title: "Systems & Security Administrator", company: "AFI", location: "Madrid, Spain", period: "Jan 2025 – Jun 2025",
