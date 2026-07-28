@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet-async";
 
 const cvData = {
   name: "Sergio Morales Durán",
-  headline: "Cybersecurity — Pentesting & Blue Team",
+  headline: "Cybersecurity Professional",
   location: "Madrid, Spain",
-  email: "smoralesduran4@gmail.com",
+  email: "smoralesduran9@gmail.com",
   linkedin: "https://www.linkedin.com/in/sergio-morales-durán",
   pdfUrl: "/cv/Sergio-Morales-Duran-CV.pdf",
   summary: `Cybersecurity professional with hands-on experience across security operations, system administration, vulnerability assessment, and offensive security. Experienced in monitoring and investigating security events, working with SIEM platforms, administering Linux and virtualized environments, and assessing vulnerabilities across web applications and networks. Strong practical background developed through professional experience, cybersecurity certifications, CTFs, and extensive security labs. Skilled in security monitoring, incident investigation, penetration testing, automation, and scripting with Python and Bash. Currently pursuing a BSc in Cybersecurity Engineering, with a strong focus on continuously developing practical skills and delivering effective security solutions.`,
