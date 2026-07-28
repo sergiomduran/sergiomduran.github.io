@@ -121,7 +121,7 @@ export default function Home() {
     </motion.h1>
 
     <motion.p variants={fadeUp(0.1)} className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-xl">
-      Pentesting · Forensics · Automation. Sharing projects, writeups and practical notes focused on methodology and real-world risk reduction.
+      AI. Cybersecurity. Automation. Practical notes focused on methodology and real-world risk reduction.
     </motion.p>
 
     <motion.div variants={fadeUp(0.15)} className="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
@@ -213,9 +213,8 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-semibold mb-3">About</h2>
               <div className="prose dark:prose-invert max-w-none">
                 <p>
-                  I focus on penetration testing, web security, and digital forensics.
-                  I participate in CTFs, build automation tooling, and document methodology.
-                  My goal is to design pragmatic security solutions that reduce real-world risk.
+                  I work across cybersecurity operations, security engineering, and offensive security, with hands-on experience in security monitoring, vulnerability assessment, incident investigation, and system security. I build practical tooling, automate security workflows, and use offensive techniques to better understand and improve defensive controls. My goal is to design and implement pragmatic security solutions that strengthen resilience and reduce real-world risk.
+                  “Understand the attack. Strengthen the defense.”
                 </p>
                 <blockquote><p className="text-base">“Secure by design, validated by exploitation.”</p></blockquote>
               </div>
@@ -300,7 +299,7 @@ export default function Home() {
                     "150+ PortSwigger labs completados.",
                   ],
                   tags: ["AD/Kerberos", "LFI→RCE", "Privilege Escalation"],
-                  links: [{ label: "Writeups", href: "/writeups" }],
+                  links: [{ label: "Writeups", href: "/Contact" }],
                 },
               ].map((item, i, arr) => (
                 <motion.article
